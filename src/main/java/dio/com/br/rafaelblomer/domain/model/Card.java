@@ -12,7 +12,7 @@ public class Card {
     private Long id;
     @Column(unique = true)
     private String number;
-    @Column(precision = 2, scale = 13, name = "available_limit")
+    @Column(precision = 13, scale = 2, name = "available_limit")
     private BigDecimal limit;
 
     public Long getId() {
